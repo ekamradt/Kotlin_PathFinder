@@ -48,15 +48,15 @@ class CellTests {
     }
 
     /*
-     * +=====+=====+=====+=====+=====+
+     * |=====|=====|=====|=====|=====|
      * |  A     B     C  |  D  |  E  |
      * |=====|=====|     |     |=====|
      * |  F     G  |  H     I     J  |
-     * +=====|     |     |=====|     +
+     * |=====|     |     |=====|     |
      * |  K     L  |  M  |  N  |  O  |
-     * +=====|     |=====|=====|=====+
+     * |=====|     |=====|=====|=====|
      * |  P     Q     R     S     T  |
-     * +     | ====|=====|     |=====+
+     * |     |=====|=====|     |=====|
      * |  U  |  V     W  |  X     Y  |
      * |=====|=====|=====|=====|=====|
      */
@@ -65,7 +65,8 @@ class CellTests {
         grid.put("A", arrayOf("B"))
         grid.put("B", arrayOf("A", "C"))
         grid.put("C", arrayOf("B", "H"))
-        grid.put("D", arrayOf("E", "I"))
+        grid.put("D", arrayOf("I"))
+        grid.put("E", arrayOf())
         grid.put("F", arrayOf("G"))
         grid.put("G", arrayOf("F", "L"))
         grid.put("H", arrayOf("C", "I", "M"))
